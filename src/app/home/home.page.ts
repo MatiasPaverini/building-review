@@ -10,7 +10,7 @@ import { LoginService } from "../services/login.service";
 })
 export class HomePage {
 
-  @Output() title = 'Home';
+  title: string = 'Home';
   constructor(private account: LoginService, private router: Router) {}
 
   logout() {
@@ -20,6 +20,13 @@ export class HomePage {
     }).catch(res => {
       console.log(res);
     });
+  }
+
+   /**
+   * ugly
+   */
+  public ugly() {
+    
   }
 
 }

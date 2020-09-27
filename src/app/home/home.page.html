@@ -1,18 +1,19 @@
-<app-header [title]=title></app-header>
+<!--<app-header [title]=title></app-header>-->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <!-- <ion-toolbar> -->
-      <!-- <ion-title size="large">Login-email</ion-title> -->
-    <!-- </ion-toolbar> -->
-  </ion-header>
+<app-header [title] = "title"></app-header>
+
 
   <div id="container">
     <!--<app-login></app-login> -->
-
-    <ion-button (click)="logout()" expand="block" fill="solid" shape="round">
-      LOG OUT
+    <ion-button (click)="nice()" expand="block" fill="solid" shape="round">
+      Cosas lindas
     </ion-button>
-  </div>
-  
-</ion-content>
+    
+    <ion-button (click)="ugly()" expand="block" fill="solid" shape="round">
+      Cosas feas
+    </ion-button>
 
+
+  </div>
+
+</ion-content>

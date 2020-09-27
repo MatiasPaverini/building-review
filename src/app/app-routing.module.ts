@@ -20,6 +20,22 @@ const routes: Routes = [
   {
     path: 'header',
     loadChildren: () => import('./header/header.component').then( m => m.HeaderComponent)
+  },
+  {
+    path: 'voting',
+    loadChildren: () => import('./voting/voting.module').then( m => m.VotingPageModule)
+  },
+  {
+    path: 'results',
+    loadChildren: () => import('./results/results.module').then( m => m.ResultsPageModule)
+  },
+  {
+    path: 'photos',
+    loadChildren: () => import('./photos/photos.module').then( m => m.PhotosPageModule)
+  },
+  {
+    path: 'upload-photos',
+    loadChildren: () => import('./upload-photos/upload-photos.module').then( m => m.UploadPhotosPageModule)
   }
 ];
 

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { title } from 'process';
 
 @Component({
@@ -9,9 +9,17 @@ import { title } from 'process';
 export class HeaderComponent implements OnInit {
 
   @Input() title:string;
+
+  @Output() menu:any = new EventEmitter();
   
   constructor() { }
 
+  showMenu() {
+    this.menu = 'first';
+  }
+
   ngOnInit() {}
+
+
 
 }
